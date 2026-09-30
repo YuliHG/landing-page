@@ -61,7 +61,54 @@
     <section id="productos" class="products section-container">
       <h2 class="section-title">Nuestros Productos</h2>
       <div class="products-grid">
-        <!-- El Integrante 2 colocará aquí las tarjetas de catálogo -->
+        <article class="product-card">
+          <div class="product-img" aria-hidden="true">MG</div>
+          <div class="product-body">
+            <h3>Leggings Deportivos</h3>
+            <p>Tejido elástico de secado rápido con soporte medio para entrenamiento.</p>
+            <span class="product-price">$499 MXN</span>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-img" aria-hidden="true">MG</div>
+          <div class="product-body">
+            <h3>Top Deportivo</h3>
+            <p>Comodidad y transpirabilidad para tus rutinas de mayor intensidad.</p>
+            <span class="product-price">$349 MXN</span>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-img" aria-hidden="true">MG</div>
+          <div class="product-body">
+            <h3>Camiseta Dry-Fit</h3>
+            <p>Tela ligera que controla la humedad y mantiene la frescura.</p>
+            <span class="product-price">$299 MXN</span>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-img" aria-hidden="true">MG</div>
+          <div class="product-body">
+            <h3>Chaqueta Rompevientos</h3>
+            <p>Protección contra el viento y el agua para entrenar al aire libre.</p>
+            <span class="product-price">$799 MXN</span>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-img" aria-hidden="true">MG</div>
+          <div class="product-body">
+            <h3>Shorts de Entrenamiento</h3>
+            <p>Libertad de movimiento con bolsillos laterales y cintura elástica.</p>
+            <span class="product-price">$399 MXN</span>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-img" aria-hidden="true">MG</div>
+          <div class="product-body">
+            <h3>Jogger Urbano</h3>
+            <p>Estilo casual y funcional, ideal para antes y después del ejercicio.</p>
+            <span class="product-price">$549 MXN</span>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -69,7 +116,25 @@
     <section id="contacto" class="contact section-container">
       <h2 class="section-title">Contacto</h2>
       <div class="contact-wrapper">
-        <!-- El Integrante 2 colocará aquí el formulario de contacto -->
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            <span class="form-error" data-error-for="nombre"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+            <span class="form-error" data-error-for="email"></span>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos en qué podemos ayudarte" required></textarea>
+            <span class="form-error" data-error-for="mensaje"></span>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
 
@@ -77,7 +142,22 @@
     <section id="seguridad" class="security section-container">
       <h2 class="section-title">Políticas de Seguridad</h2>
       <div class="security-content">
-        <!-- El Integrante 2 colocará aquí el aviso de privacidad y seguridad -->
+        <article class="security-card">
+          <h3>Protección de datos</h3>
+          <p>MORGANA protege la información personal de sus clientes, limitando su uso a la gestión de pedidos, envíos y atención al cliente.</p>
+        </article>
+        <article class="security-card">
+          <h3>Transacciones seguras</h3>
+          <p>Los pagos se procesan mediante conexiones cifradas (HTTPS) y pasarelas certificadas. No almacenamos datos de tarjetas bancarias.</p>
+        </article>
+        <article class="security-card">
+          <h3>Privacidad garantizada</h3>
+          <p>No compartimos tu información con terceros sin tu consentimiento. Puedes solicitar la eliminación de tus datos cuando lo desees.</p>
+        </article>
+        <article class="security-card">
+          <h3>Cambios y devoluciones</h3>
+          <p>Aceptamos cambios dentro de los 30 días posteriores a la compra, siempre que el producto esté sin uso y en su empaque original.</p>
+        </article>
       </div>
     </section>
   </main>

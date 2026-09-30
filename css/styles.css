@@ -204,5 +204,160 @@ html {
   }
 }
 
-/* ESTILOS INTEGRANTE 2: Productos, Contacto, Seguridad
-   (agrega lo de tus estilos de tus secciones a partir de aquí) */
+/* ========================================================
+   ESTILOS INTEGRANTE 2: Productos, Contacto, Seguridad
+   ======================================================== */
+
+/* --- Productos --- */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.1);
+}
+
+.product-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  background: linear-gradient(135deg, var(--primary) 0%, #082138 100%);
+  color: var(--text-white);
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.product-body {
+  padding: 1.5rem;
+}
+
+.product-body h3 {
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.product-body p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.product-price {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* --- Contacto --- */
+.contact-wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.05);
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text-main);
+  background: var(--bg-light);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.form-group input.input-invalid,
+.form-group textarea.input-invalid {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12);
+}
+
+.form-error {
+  min-height: 1.1rem;
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  color: #dc2626;
+}
+
+.form-status {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.form-status-error {
+  color: #dc2626;
+}
+
+.form-status-success {
+  color: #15803d;
+}
+
+/* --- Políticas de seguridad --- */
+.security-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.security-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--primary);
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.05);
+}
+
+.security-card h3 {
+  margin-bottom: 0.75rem;
+  color: var(--primary);
+}
+
+.security-card p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
