@@ -1,0 +1,208 @@
+/* ========================================================
+   VARIABLES DE DISEÑO - PALETA: AZUL, BLANCO, NEGRO Y GRIS
+   ======================================================== */
+:root {
+  /* Azules principales */
+  --primary: #0f4c81;        /* Azul corporativo */
+  --primary-hover: #0a355c;  /* Azul oscuro interactivo */
+  --accent: #2563eb;         /* Azul brillante de acento */
+  --accent-hover: #1d4ed8;
+
+  /* Escala de grises y neutros */
+  --bg-light: #f8fafc;       /* Fondo suave */
+  --card-bg: #ffffff;        /* Blanco puro */
+  --border-color: #e2e8f0;   /* Gris claro para bordes */
+
+  /* Tipografía */
+  --text-main: #0f172a;      /* Negro azulado */
+  --text-muted: #64748b;     /* Gris medio */
+  --text-white: #ffffff;     /* Blanco */
+
+  --max-w: 1100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--text-main);
+  background-color: var(--bg-light);
+}
+
+.section-container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 2.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--text-white);
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+}
+
+/* ========================================================
+   ESTILOS INTEGRANTE 1: Header, Hero y ¿Quiénes somos?
+   ======================================================== */
+.header {
+  position: sticky;
+  top: 0;
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 2px 4px rgba(15, 23, 42, 0.05);
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+  color: var(--accent);
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: var(--text-main);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--primary) 0%, #082138 100%);
+  color: var(--text-white);
+  padding: 6rem 1.5rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.about-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.05);
+}
+
+.about-card h3 {
+  margin-bottom: 0.75rem;
+  color: var(--primary);
+}
+
+.about-card p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.footer {
+  background: #0b1320;
+  color: #94a3b8;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #1e293b;
+}
+
+/* Responsive para navegación */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--card-bg);
+    flex-direction: column;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ESTILOS INTEGRANTE 2: Productos, Contacto, Seguridad
+   (agrega lo de tus estilos de tus secciones a partir de aquí) */

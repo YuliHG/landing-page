@@ -3,21 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
+  <title>MORGANA - Ropa Deportiva</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- Estructura base para las 5 secciones -->
-  <header></header>
+  <!--SECCION ASIGNADA A YULI (integrante 1)
+  (Header, Navegación, Inicio y ¿Quiénes somos?)-->
+       
+  <header class="header">
+    <div class="nav-container">
+      <a href="#inicio" class="logo">MORGANA</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#quienes-somos">¿Quiénes somos?</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#seguridad">Seguridad</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <section id="inicio"></section>
-    <section id="quienes-somos"></section>
-    <section id="productos"></section>
-    <section id="contacto"></section>
-    <section id="seguridad"></section>
+    <!-- 1. Inicio (Hero Seccion) -->
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <h1></h1>
+        <p></p>
+        <a href="#productos" class="btn btn-primary">Conoce el catálogo</a>
+      </div>
+    </section>
+
+    <!-- 2. ¿Quiénes somos? -->
+    <section id="quienes-somos" class="about section-container">
+      <h2 class="section-title">¿Quiénes somos?</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Misión</h3>
+          <p></p>
+        </div>
+        <div class="about-card">
+          <h3>Visión</h3>
+          <p></p>
+        </div>
+        <div class="about-card">
+          <h3>Valores</h3>
+          <p></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN ASIGNADA A MARCO (integrante 2)
+         (Productos, Contacto y Políticas de seguridad) -->
+
+    <!-- 3. Productos / Servicios -->
+    <section id="productos" class="products section-container">
+      <h2 class="section-title">Nuestros Productos</h2>
+      <div class="products-grid">
+        <!-- El Integrante 2 colocará aquí las tarjetas de catálogo -->
+      </div>
+    </section>
+
+    <!-- 4. Contacto -->
+    <section id="contacto" class="contact section-container">
+      <h2 class="section-title">Contacto</h2>
+      <div class="contact-wrapper">
+        <!-- El Integrante 2 colocará aquí el formulario de contacto -->
+      </div>
+    </section>
+
+    <!-- 5. Políticas de seguridad -->
+    <section id="seguridad" class="security section-container">
+      <h2 class="section-title">Políticas de Seguridad</h2>
+      <div class="security-content">
+        <!-- El Integrante 2 colocará aquí el aviso de privacidad y seguridad -->
+      </div>
+    </section>
   </main>
-  <footer></footer>
+
+  <footer class="footer">
+    <p>&copy; 2026 MORGANA. Todos los derechos reservados.</p>
+  </footer>
 
   <script src="js/main.js"></script>
 </body>
