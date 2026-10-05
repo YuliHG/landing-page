@@ -20,7 +20,7 @@ Se agregaron **6 tarjetas de producto** dentro de `.products-grid`. Cada tarjeta
 
 ```html
 <article class="product-card">
-  <div class="product-img" aria-hidden="true">MG</div>
+  <img class="product-img" src="assets/Productos/Nombre.jpg" alt="Nombre del producto">
   <div class="product-body">
     <h3>Nombre del producto</h3>
     <p>Descripción breve.</p>
@@ -29,18 +29,18 @@ Se agregaron **6 tarjetas de producto** dentro de `.products-grid`. Cada tarjeta
 </article>
 ```
 
-Productos incluidos y **precios en pesos mexicanos (MXN)**, dentro del rango estándar del mercado deportivo en México:
+Productos incluidos, con su imagen y **precio en pesos mexicanos (MXN)**, dentro del rango estándar del mercado deportivo en México:
 
-| Producto | Precio |
-| --- | --- |
-| Leggings Deportivos | $499 MXN |
-| Top Deportivo | $349 MXN |
-| Camiseta Dry-Fit | $299 MXN |
-| Chaqueta Rompevientos | $799 MXN |
-| Shorts de Entrenamiento | $399 MXN |
-| Jogger Urbano | $549 MXN |
+| Producto | Imagen | Precio |
+| --- | --- | --- |
+| Leggings Deportivos | `assets/Productos/Legging.avif` | $499 MXN |
+| Top Deportivo | `assets/Productos/Top deportivo.png` | $349 MXN |
+| Camiseta Dry-Fit | `assets/Productos/Dry fit.jpg` | $299 MXN |
+| Chaqueta Rompevientos | `assets/Productos/Rompevientos.jpg` | $799 MXN |
+| Shorts de Entrenamiento | `assets/Productos/Short de entrenamiento.avif` | $399 MXN |
+| Jogger Urbano | `assets/Productos/Jogger.jpg` | $549 MXN |
 
-> Nota: `product-img` es un marcador visual (gradiente con las iniciales "MG"). Si más adelante hay imágenes reales, se reemplaza por una etiqueta `<img>`.
+> Las imágenes se agregaron desde la carpeta `assets/Productos/`. En el HTML los nombres con espacios se URL-encodean (`%20`). Cada `img` incluye su atributo `alt` por accesibilidad.
 
 ### Sección Contacto (`#contacto`)
 Se agregó el formulario `#contact-form` dentro de `.contact-wrapper`, con `novalidate` para manejar la validación desde JavaScript. Campos:
@@ -91,7 +91,7 @@ Se agregaron estilos al final del archivo, bajo el encabezado *"ESTILOS INTEGRAN
 ### Productos
 - `.products-grid`: rejilla responsiva (`auto-fit`, mínimo 260px).
 - `.product-card`: tarjeta con borde, sombra y efecto hover (elevación).
-- `.product-img`: franja superior con degradado azul y las iniciales.
+- `.product-img`: imagen del producto a ancho completo (`height: 220px`, `object-fit: cover`).
 - `.product-price`: precio resaltado en azul de acento.
 
 ### Contacto
@@ -120,6 +120,10 @@ Se agregaron estilos al final del archivo, bajo el encabezado *"ESTILOS INTEGRAN
    - Estilos de productos, formulario y tarjetas de seguridad.
 4. **Actualización de precios**
    - Se cambiaron los precios de formato con separador de miles por punto (ej. `$49.900`) a **pesos mexicanos (MXN)** con formato `$000 MXN`, ajustados a rangos estándar del mercado en México.
+5. **Imágenes de productos**
+   - Se agregó la carpeta `assets/Productos/` con 6 imágenes.
+   - Se reemplazaron los marcadores visuales por etiquetas `<img class="product-img">` con su `alt`.
+   - Se actualizó el estilo `.product-img` para mostrar imágenes (`object-fit: cover`).
 
 ---
 

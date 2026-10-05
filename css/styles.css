@@ -89,10 +89,25 @@ html {
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--primary);
   text-decoration: none;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.logo-wordmark {
+  height: 44px;
+  width: auto;
+  display: block;
 }
 
 .nav-menu {
