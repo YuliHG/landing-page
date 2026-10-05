@@ -110,4 +110,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // LÓGICA DE MEJORAS VISUALES
+  // (Sombra del header y animación de aparición al hacer scroll)
+
+  const header = document.querySelector('.header');
+  if (header) {
+    const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 10);
+    updateHeader();
+    window.addEventListener('scroll', updateHeader, { passive: true });
+  }
+
+  const revealElements = document.querySelectorAll('.reveal');
+  if (revealElements.length) {
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      revealElements.forEach((el) => observer.observe(el));
+    } else {
+      revealElements.forEach((el) => el.classList.add('is-visible'));
+    }
+  }
+
 });
