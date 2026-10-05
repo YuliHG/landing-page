@@ -7,9 +7,18 @@
 
   <link rel="icon" type="image/png" href="assets/Logo/logo-emblem.png">
   
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=20261005">
 </head>
 <body>
+
+  <!-- Barra superior decorativa -->
+  <div class="topbar" role="note">
+    <span class="topbar-inner">
+      <span class="topbar-sparkle" aria-hidden="true">✦</span>
+      Envío gratis en pedidos mayores a $999 MXN · Nueva colección 2026
+      <a href="#productos" class="topbar-link">Ver catálogo</a>
+    </span>
+  </div>
 
   <!--SECCION ASIGNADA A YULI (integrante 1)
   (Header, Navegación, Inicio y ¿Quiénes somos?)-->
@@ -34,17 +43,44 @@
   <main>
     <!-- 1. Inicio (Hero Seccion) -->
     <section id="inicio" class="hero">
-      <div class="hero-content">
-        <h1>Ropa deportiva que te acompaña en cada meta</h1>
-        <p>En MORGANA combinamos comodidad, estilo y rendimiento para que entrenes con confianza, sin importar tu nivel.</p>
-        <a href="#productos" class="btn btn-primary">Conoce el catálogo</a>
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+      </div>
+      <div class="hero-grid">
+        <div class="hero-text">
+          <span class="hero-badge">Nueva colección 2026</span>
+          <h1>Ropa deportiva que te acompaña en cada meta</h1>
+          <p>En MORGANA combinamos comodidad, estilo y rendimiento para que entrenes con confianza, sin importar tu nivel.</p>
+          <div class="hero-actions">
+            <a href="#productos" class="btn btn-primary">Conoce el catálogo</a>
+            <a href="#contacto" class="btn btn-ghost">Contáctanos</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>+6</strong><span>Prendas</span></li>
+            <li><strong>30 días</strong><span>Para cambios</span></li>
+            <li><strong>100%</strong><span>Calidad</span></li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <div class="hero-media-glow" aria-hidden="true"></div>
+          <img class="hero-img" src="assets/Productos/Legging.avif" alt="Leggings deportivos MORGANA">
+          <div class="hero-float-card">
+            <span class="dot"></span>
+            <div>
+              <strong>Envío seguro</strong>
+              <small>Pagos cifrados HTTPS</small>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- 2. ¿Quiénes somos? -->
     <section id="quienes-somos" class="about section-container">
-      <h2 class="section-title">¿Quiénes somos?</h2>
-      <div class="about-grid">
+      <h2 class="section-title reveal">¿Quiénes somos?</h2>
+      <div class="about-grid reveal">
         <div class="about-card">
           <h3>Misión</h3>
           <p>Ofrecer ropa deportiva de calidad a precios accesibles, ayudando a las personas a sentirse cómodas y motivadas mientras entrenan.</p>
@@ -65,8 +101,8 @@
 
     <!-- 3. Productos / Servicios -->
     <section id="productos" class="products section-container">
-      <h2 class="section-title">Nuestros Productos</h2>
-      <div class="products-grid">
+      <h2 class="section-title reveal">Nuestros Productos</h2>
+      <div class="products-grid reveal">
         <article class="product-card">
           <img class="product-img" src="assets/Productos/Legging.avif" alt="Leggings Deportivos">
           <div class="product-body">
@@ -120,8 +156,8 @@
 
     <!-- 4. Contacto -->
     <section id="contacto" class="contact section-container">
-      <h2 class="section-title">Contacto</h2>
-      <div class="contact-wrapper">
+      <h2 class="section-title reveal">Contacto</h2>
+      <div class="contact-wrapper reveal">
         <form id="contact-form" class="contact-form" novalidate>
           <div class="form-group">
             <label for="nombre">Nombre completo</label>
@@ -146,8 +182,8 @@
 
     <!-- 5. Políticas de seguridad -->
     <section id="seguridad" class="security section-container">
-      <h2 class="section-title">Políticas de Seguridad</h2>
-      <div class="security-content">
+      <h2 class="section-title reveal">Políticas de Seguridad</h2>
+      <div class="security-content reveal">
         <article class="security-card">
           <h3>Protección de datos</h3>
           <p>MORGANA protege la información personal de sus clientes, limitando su uso a la gestión de pedidos, envíos y atención al cliente.</p>
@@ -172,6 +208,6 @@
     <p>&copy; 2026 MORGANA. Todos los derechos reservados.</p>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=20261005"></script>
 </body>
 </html>
